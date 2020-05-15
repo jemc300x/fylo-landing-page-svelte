@@ -2,9 +2,7 @@ import App from './containers/App.svelte';
 
 const app = new App({
 	target: document.body,
-	props: {
-		name: 'world'
-	}
+	props: {}
 });
 
 export default app;
