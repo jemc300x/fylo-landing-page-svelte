@@ -1,6 +1,10 @@
 <script>
   import Header from '../components/Header.svelte';
   import Section from '../components/Section.svelte';
+  import Container from '../components/Container.svelte';
+  import Curve from '../components/Curve.svelte';
+  import Card from '../components/Card.svelte';
+
 </script>
 
 <style>
@@ -113,3 +117,24 @@
     <button>Get Started</button>
   </form>
 </Section>
+
+<Curve />
+<Container>
+  <Section
+    imgUrl='/assets/img/illustration-2.svg'
+    imgTextAlt='Ilustration 2'
+  >
+    <h2>Stay productive, wherever your are</h2>
+    <p class='text-aling-start'>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+    <p class='text-aling-start'>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+    <div class="section-details-call-to-action">
+      <a href="/">See how Fylo works <span><img src='/assets/img/icon-arrow.svg' alt="Icon Arrow" /></span></a>
+    </div>
+    <Card 
+      avatar='/assets/img/avatar-testimonial.jpg'
+      userName='Kely Burton'
+      userDetails='Founder & CEO, Huddle'
+      content='Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-olled collaboration machine.'
+    />
+  </Section>
+</Container>

@@ -18,6 +18,7 @@
     list-style: none;
     display: inline-flex;
     font-family: var(--font-family);
+    padding: 0;
   }
 
   .header-navbar li {
