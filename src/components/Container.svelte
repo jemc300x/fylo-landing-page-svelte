@@ -1,10 +1,8 @@
+<script>
+  export let backgroundColor;
+</script>
 
-<style>
-  .background-color{
-    background-color: var(--Light-Grayish-Blue);
-  }
-</style>
 
-<div class="background-color">
+<div style="background-color: var({backgroundColor})">
   <slot></slot>
 </div>

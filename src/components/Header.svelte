@@ -11,7 +11,7 @@
   }
 
   .header-logo{
-    width: 100px;
+    width: 90px;
   }
 
   .header-navbar{
@@ -32,6 +32,10 @@
   @media (min-width: 768px){
     .header-navbar li {
       margin-right: 25px;
+    }
+
+    .header-logo{
+      width: initial;
     }  
   }
 
@@ -40,8 +44,8 @@
 <header class="header">
   <img class="header-logo" src="/assets/img/logo.svg" alt="logo">
   <ul class="header-navbar">
-    <li><a href="/">Feature</a></li>
+    <li><a href="/">Features</a></li>
     <li><a href="/">Team</a></li>
-    <li><a href="/">Sing In</a></li>
+    <li><a href="/">Sign In</a></li>
   </ul>
 </header>

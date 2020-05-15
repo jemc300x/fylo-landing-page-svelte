@@ -4,6 +4,8 @@
   import Container from '../components/Container.svelte';
   import Curve from '../components/Curve.svelte';
   import Card from '../components/Card.svelte';
+  import Newsletter from '../components/Newsletter.svelte';
+  import Footer from '../components/Footer.svelte';
 
 </script>
 
@@ -48,7 +50,7 @@
   }
 
   input {
-    width: 75%;
+    width: 90%;
     border-radius: 3px;
     padding: 10px;
     border: 1px solid var(--Very-Dark-Blue);
@@ -58,7 +60,7 @@
   }
 
   button {
-    width: 80%;
+    width: 90%;
     background-color: var(--Bright-Blue);
     padding: 10px;
     color: var(--Light-Grayish-Blue);
@@ -80,6 +82,10 @@
     border-bottom: 1px solid;
     padding: 5px;
     margin: 20px 0 20px 0;
+  }
+  
+  .text-aling-start {
+    text-align: start;
   }
 
   @media (min-width: 768px){
@@ -119,7 +125,7 @@
 </Section>
 
 <Curve />
-<Container>
+<Container backgroundColor='--Light-Grayish-Blue'>
   <Section
     imgUrl='/assets/img/illustration-2.svg'
     imgTextAlt='Ilustration 2'
@@ -138,3 +144,9 @@
     />
   </Section>
 </Container>
+
+<Container backgroundColor='--Desaturated-Blue'>
+  <Newsletter />
+</Container>
+
+<Footer />
