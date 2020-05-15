@@ -28,6 +28,12 @@
     text-decoration: none;
   }
 
+  @media (min-width: 768px){
+    .header-navbar li {
+      margin-right: 25px;
+    }  
+  }
+
 </style>
 
 <header class="header">
