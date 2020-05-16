@@ -1,3 +1,6 @@
+<script>
+  import { link } from 'svelte-spa-router';
+</script>
 
 <style>
   .header{
@@ -42,10 +45,12 @@
 </style>
 
 <header class="header">
-  <img class="header-logo" src="/assets/img/logo.svg" alt="logo">
+  <a href="/" use:link>
+    <img class="header-logo" src="/assets/img/logo.svg" alt="logo">
+  </a>
   <ul class="header-navbar">
-    <li><a href="/">Features</a></li>
-    <li><a href="/">Team</a></li>
-    <li><a href="/">Sign In</a></li>
+    <li><a href="/features" use:link>Features</a></li>
+    <li><a href="/team" use:link>Team</a></li>
+    <li><a href="/about" use:link>Sign In</a></li>
   </ul>
 </header>

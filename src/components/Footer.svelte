@@ -1,3 +1,7 @@
+<script>
+  import { link } from 'svelte-spa-router';
+</script>
+
 <style>
   .footer{
     padding-top: 80px;
@@ -24,11 +28,6 @@
     color: var(--Light-Grayish-Blue);
   }
 
-  .column1, .column2, .column3, .column4 {
-    /* padding-top: 50px; */
-    /* outline: 1px solid; */
-  }
-
   .column1 svg {
     padding-bottom: 20px;
   }
@@ -43,7 +42,6 @@
 
   .column4 {
     text-align: center;
-    padding-right: 50px;
   }
 
   .column4 i {
@@ -72,14 +70,15 @@
     .column4 {
       flex: 25%;
       text-align: center;
+      padding-right: 50px;
     }
   }
 
 </style>
 
 <footer class="footer">
-    <div class="column1">
-      <a href="/">
+  <div class="column1">
+    <a href="/" use:link>
         <svg width="166" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
           <path id="a" d="M.014.03h93.96v48.29H.015z"/>
@@ -97,34 +96,34 @@
             </g>
           </g>
         </svg>
-      </a>
-      <p><span><img src="/assets/img/icon-phone.svg" alt="" /></span> Phone: <a href="tel://+1531234567">+1-543-123-4567</a></p>
-      <p><span><img src="/assets/img/icon-email.svg" alt="" /></span> <a href="mailto://example@fylo.com">example@fylo.com</a></p>
-    </div>
-    <div class="column2">
-      <ul>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/jobs">Jobs</a></li>
-        <li><a href="/press">Press</a></li>
-        <li><a href="/blog">Blog</a></li>
-      </ul>
-    </div>
-    <div class="column3">
-      <ul>
-        <li><a href="/contact">Contact Us</a></li>
-        <li><a href="/Terms">Terms</a></li>
-        <li><a href="/privacy">Privacy</a></li>
-      </ul>
-    </div>
-    <div class="column4">
-      <a href="/">
-        <i class="fab fa-facebook fa-2x" />
-      </a>
-      <a href="https://twitter.com/jemc300x">
-        <i class="fab fa-twitter fa-2x" />
-      </a>
-      <a href="/">
-        <i class="fab fa-instagram fa-2x" />
-      </a>
-    </div>
-  </footer>
+    </a>
+    <p><span><img src="/assets/img/icon-phone.svg" alt="" /></span> Phone: <a href="tel://+1531234567">+1-543-123-4567</a></p>
+    <p><span><img src="/assets/img/icon-email.svg" alt="" /></span> <a href="mailto://example@fylo.com">example@fylo.com</a></p>
+  </div>
+  <div class="column2">
+    <ul>
+      <li><a href="/about" use:link>About Us</a></li>
+      <li><a href="/jobs" use:link>Jobs</a></li>
+      <li><a href="/press" use:link>Press</a></li>
+      <li><a href="/blog" use:link>Blog</a></li>
+    </ul>
+  </div>
+  <div class="column3">
+    <ul>
+      <li><a href="/contact" use:link>Contact Us</a></li>
+      <li><a href="/Terms" use:link>Terms</a></li>
+      <li><a href="/privacy" use:link>Privacy</a></li>
+    </ul>
+  </div>
+  <div class="column4">
+    <a href="/">
+      <i class="fab fa-facebook fa-2x" />
+    </a>
+    <a href="https://twitter.com/jemc300x">
+      <i class="fab fa-twitter fa-2x" />
+    </a>
+    <a href="/">
+      <i class="fab fa-instagram fa-2x" />
+    </a>
+  </div>
+</footer>
