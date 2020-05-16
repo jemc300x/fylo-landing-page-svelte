@@ -7,8 +7,7 @@
   .section{
     display: flex;
     flex-direction: column;
-    padding: 0px 5%;
-    padding-bottom: 90px;
+    padding: 30px 5% 90px;
   }
 
   .section-illustration {
@@ -29,6 +28,7 @@
       flex-direction: row-reverse;
       max-width: var(--desktop-width);
       margin: 0px auto;
+      padding-top: 50px;
       padding-bottom: 100px;
       align-items: center;
     }

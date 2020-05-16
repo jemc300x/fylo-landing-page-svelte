@@ -19,14 +19,22 @@
     margin-bottom: 20px;
   }
 
+  .newsletter form {
+    width: 100%;
+  }
+
   .newsletter input {
     width: 70%;
     border-radius: 3px;
     padding: 10px;
     border: 1px solid var(--Very-Dark-Blue);
     font-family: var(--font-family);
-    color: var(--Light-Gray);
     margin-bottom: 10px;
+    font-size: 13.3333px;
+  }
+
+  ::placeholder {
+    color: var(--Light-Gray);
   }
 
   .newsletter button {
@@ -59,7 +67,7 @@
     }
 
     .newsletter div p {
-      max-width: 500px;
+      max-width: 540px;
     }
 
     .newsletter form {

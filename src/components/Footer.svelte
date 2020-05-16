@@ -4,10 +4,7 @@
 
 <style>
   .footer{
-    padding-top: 80px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
+    padding: 80px 50px 50px 50px;
     background-color: var(--Very-Dark-Blue);
     color: var(--Light-Grayish-Blue);
     display: flex;
@@ -28,12 +25,16 @@
     color: var(--Light-Grayish-Blue);
   }
 
+  .column1, .column2, .column3, .column4 {
+    padding-bottom: 25px;
+  }
+
   .column1 svg {
-    padding-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .column1 p {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 
   .column1 p span {
@@ -57,9 +58,9 @@
     }
 
     .column1 {
-      flex: 40%;
+      flex: 50%;
       padding: 0;
-      margin-top: -75px;
+      margin-top: -85px;
     }
     .column2 {
       flex: 20%;
@@ -68,8 +69,8 @@
       flex: 20%;
     }
     .column4 {
-      flex: 25%;
-      text-align: center;
+      flex: 30%;
+      text-align: start;
       padding-right: 50px;
     }
   }

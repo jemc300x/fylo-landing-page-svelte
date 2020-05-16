@@ -3,7 +3,7 @@
     background-image: url(/assets/img/bg-curve-mobile.svg);
     background-size: cover;
     background-position: center;
-    height: 125px;
+    height: 115px;
   }
 
   @media(min-width: 768px) {

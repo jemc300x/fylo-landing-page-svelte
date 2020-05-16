@@ -40,21 +40,21 @@
   h2 {
     margin-bottom: 25px;
     font-size: 1.2rem;
+    font-family: var(--font-family)
   }
 
   p {
-    margin-bottom: 25px;
-    padding: 0 2%;
+    margin-bottom: 20px;
   }
 
   input {
     width: 90%;
-    border-radius: 3px;
     padding: 10px;
-    border: 1px solid var(--Very-Dark-Blue);
     font-family: var(--font-family);
-    color: var(--Light-Gray);
+    border-radius: 3px;
+    border: 1px solid var(--Very-Dark-Blue);
     margin-bottom: 10px;
+    font-size: 13.3333px;
   }
 
   button {
@@ -74,12 +74,18 @@
     padding-bottom: 50px;
   }
 
+  .section-details-call-to-action img{
+    width: 25px;
+    margin-left: 5px;
+  }
+
   a {
     color: var(--Moderate-Cyan);
     text-decoration: none;
-    border-bottom: 1px solid;
+    border-bottom: 1.5px solid;
     padding: 5px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
+    display: inline-flex;
   }
   
   .text-aling-start {
@@ -92,8 +98,13 @@
       font-family: var(--font-family);
     }
 
+    h2 {
+      font-size: 2rem;
+    }
+
     p {
       padding: 0;
+      max-width: 540px;
     }
 
     input {
@@ -131,11 +142,11 @@
     <p class='text-aling-start'>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
     <p class='text-aling-start'>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
     <div class="section-details-call-to-action">
-      <a href="/">See how Fylo works <span><img src='/assets/img/icon-arrow.svg' alt="Icon Arrow" /></span></a>
+      <a href="/">See how Fylo works <img src='/assets/img/icon-arrow.svg' alt="Icon Arrow" /></a>
     </div>
     <Card 
       avatar='/assets/img/avatar-testimonial.jpg'
-      userName='Kely Burton'
+      userName='Kyle Burton'
       userDetails='Founder & CEO, Huddle'
       content='Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-olled collaboration machine.'
     />
