@@ -5,6 +5,7 @@ import TestPage from './pages/TestPage.svelte';
 const routes = {
   '/': Home,
   '/about': TestPage,
+  '/features': TestPage,
   '*': NotFound
 }
 
