@@ -51,8 +51,8 @@
 
   @media (min-width: 768px) {
     .footer {
-      padding-top: 160px;
-      padding-bottom: 60px;
+      padding-top: 180px;
+      padding-bottom: 10px;
       flex-direction: row;
       justify-content: space-between;
     }
@@ -63,10 +63,10 @@
       margin-top: -85px;
     }
     .column2 {
-      flex: 20%;
+      flex: 30%;
     }
     .column3 {
-      flex: 20%;
+      flex: 30%;
     }
     .column4 {
       flex: 30%;
